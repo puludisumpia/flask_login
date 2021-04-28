@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a href="#" class="navbar-brand">Brand</a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+            <a href="{{ url_for('blog.index') }}" class="nav-item nav-link active">Accueil</a>
+            <a href="{{ url_for('blog.profile') }}" class="nav-item nav-link">Profile</a> 
+        </div>
+
+        <div class="navbar-nav ml-auto">
+            <a href="{{ url_for('auth.signup') }}" class="nav-item nav-link">S'inscrire</a>
+            <a href="{{ url_for('auth.login') }}" class="nav-item nav-link">Se connecter</a>
+            <a href="{{ url_for('auth.logout') }}" class="nav-item nav-link">Se deconnecter</a>
+        </div>
+    </div>
+</nav>
