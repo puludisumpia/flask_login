@@ -63,7 +63,7 @@ def signup():
 
             msg = Message(
                 "Confirmation inscription",
-                sender="puludisumpia@gmail.com",
+                sender="votre_email@gmail.com",
                 recipients=[email]
             )
             msg.body = f"""
@@ -104,7 +104,7 @@ def reset_password():
             db.session.commit()
             msg = Message(
                 "Confirmation changement mot de passe",
-                sender="puludisumpia@gmail.com",
+                sender="votre_email@gmail.com",
                 recipients=[email]
             )
             msg.body = f"""

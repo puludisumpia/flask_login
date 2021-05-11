@@ -16,8 +16,8 @@ def create_app():
     app.config["SQLALCHEMY_COMMIT_ON_TEARDOWN"] = True
     app.config["MAIL_SERVER"] = "smtp.gmail.com"
     app.config["MAIL_PORT"] = 465
-    app.config["MAIL_USERNAME"] = "puludisumpia@gmail.com"
-    app.config["MAIL_PASSWORD"] = "251095,;Mpia"
+    app.config["MAIL_USERNAME"] = "votre_email@gmail.com"
+    app.config["MAIL_PASSWORD"] = "votre_mot_de_passe"
     app.config["MAIL_USE_TLS"] = False
     app.config["MAIL_USE_SSL"] = True
     db.init_app(app)
