@@ -14,3 +14,13 @@ class SignupForm(FlaskForm):
     password = PasswordField(label="votre mot de passe".upper())
     submit = SubmitField(label="S'inscrire")
 
+
+class EmailForm(FlaskForm):
+    email = StringField(label="Votre mail".upper())
+    submit = SubmitField(label="Envoyer")
+
+class PasswordForm(FlaskForm):
+    password = PasswordField(label="Votre nouveau mot de passe")
+    cpassword = PasswordField(label="Confirmation mot de passe")
+    submit = SubmitField(label="Modifier")
+

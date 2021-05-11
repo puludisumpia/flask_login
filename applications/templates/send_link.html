@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% from "bootstrap/form.html" import render_form %}
+
+{% block content %}
+    <div class="container">
+        <h1>VOTRE IDENTIFIANT</h1>
+        <div class="content">
+            {% include "alertes.html" %}
+            
+            <form method="POST">
+                {{ render_form(form) }}
+            </form>
+        </div>
+    </div>
+{% endblock %}

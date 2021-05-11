@@ -8,6 +8,7 @@ class User(UserMixin, db.Model):
     name = db.Column(db.String(100), unique=True)
     email = db.Column(db.String(100))
     password = db.Column(db.String(100))
+    hash_code = db.Column(db.String(250))
 
     def __str__(self):
         return self.name
