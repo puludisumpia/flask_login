@@ -85,11 +85,6 @@ def logout():
     logout_user()
     return redirect(url_for("blog.index"))
 
-
-@auth.route("/confirmation/")
-def confirm_send():
-    return render_template("confirmation.html")
-
 @auth.route("/reset/", methods=("GET", "POST"))
 def reset_password():
     form = EmailForm()
